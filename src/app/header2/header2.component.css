@@ -1,0 +1,59 @@
+.HeaderSecond {
+    border: 1px solid blue;
+    height: 16vh;
+    color:azure;
+    background-color: blueviolet;
+    display:flex;
+    width:100%;
+}
+.HeaderThird {
+    /* border: 1px solid red; */
+    height: 80%;
+    display:flex;
+    width:20%;
+    padding-top: 10px;
+    column-gap: 10px;
+} 
+.ImageClass{
+/* border:1px solid red; */
+width:45%;
+height: 80px;
+}
+.NameClass{
+    font-weight: 700;
+    font-size: 30px;
+    padding-top: 20px;
+    
+
+}
+.NewAction{
+   border:1px solid red;
+   height:50px;
+   width:120%;
+   margin-top: 6%;
+   /* padding-right: 50px; */
+   display: flex;
+   color:white; 
+   float:left;    
+   margin-left: 100px;      
+   
+
+
+    /* display:flex; */
+    
+}
+.Practice{
+font-weight: bold;
+font-size:25px;
+column-gap:2%;
+color:azure;
+display:flex;
+ float: right; 
+
+}
+.Practical{
+    display:inline-flex;
+    column-gap: 2%;
+    margin-right: 10px;
+    width:100%
+}
