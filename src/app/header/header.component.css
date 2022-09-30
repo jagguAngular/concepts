@@ -1,4 +1,28 @@
 .header {
     border: 1px solid blue;
     height: 16vh;
+    display: flex;
+    background-color: aqua;
 }
+.forImage {
+    /* border: 1px solid red; */
+    width: 9%;
+    height: 99px;
+    
+}.forName{
+    /* border:1px solid green; */
+    width:12%;
+    font-size: 30px;
+    font-weight: 800;
+    padding-top: 25px;
+}.forNav{
+    border:1px solid red;
+}
+    
+/* }
+.NavigationApp{
+    float:right;
+}
+.navigateBar{
+    margin-left: 250px;
+} */
