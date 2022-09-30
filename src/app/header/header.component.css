@@ -1,28 +1,48 @@
 .header {
     border: 1px solid blue;
     height: 16vh;
+    background-color: rgb(76, 74, 228);
     display: flex;
-    background-color: aqua;
+    column-gap: 3%;
 }
+
 .forImage {
-    /* border: 1px solid red; */
-    width: 9%;
-    height: 99px;
-    
-}.forName{
-    /* border:1px solid green; */
-    width:12%;
+    width: 20%;
+    height: 100%;
+}
+
+.forName {
+    width: 12%;
     font-size: 30px;
     font-weight: 800;
     padding-top: 25px;
-}.forNav{
-    border:1px solid red;
+    color: aliceblue;
 }
-    
-/* }
-.NavigationApp{
-    float:right;
+
+.forNav {
+    width: 90%;
+    margin-top: 4%;
+    display: flex;
+    height: 45px;
 }
-.navigateBar{
-    margin-left: 250px;
-} */
+
+.menus {
+    color: aliceblue;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    font-size: 18px;
+    min-width: 10%;
+    margin-right: 1%;
+    border-right: 1px solid;
+    padding-right: 1%;
+    height: 90%;
+}
+
+.forLogoName {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}

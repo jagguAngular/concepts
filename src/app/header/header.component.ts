@@ -6,6 +6,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  navigations = [
+    {
+      name: 'Home',
+      id: 1
+    },
+    {
+      name: 'Dashboard',
+      id: 2
+    },
+    {
+      name: 'Chnage Password',
+      id: 3
+    },
+    {
+      name: 'Contac Us',
+      id: 4
+    },
+    {
+      name: 'About Us',
+      id: 5
+    },
+
+  ]
+
 
   constructor() { }
 
