@@ -1,4 +1,4 @@
-/* .header {
+.header {
     border: 1px solid blue;
     height: 16vh;
     background-color: rgb(76, 74, 228);
@@ -45,4 +45,4 @@
     display: flex;
     flex-direction: row;
     column-gap: 10px;
-} */
+}
