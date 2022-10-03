@@ -1,12 +1,46 @@
-<!-- <div class="header">
+<div class="header">
     <div class="forLogoName">
         <div class="forImage"><img src="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg" width="100%" height="100%"></div>
         <div class="forName">AngularApp</div>
     </div>
     <div class="forNav">
-        <div class="menus" *ngFor="let nav of navigations">
+        <!-- <div (click)="onClickHome()" class="menus">
+            <span>Home</span>
+        </div> -->
+        <!-- <div (click)="onClickHome(
+            {
+                name:;shcbdhscj
+            }
+        )" class="menus">
+            <span>Home</span>
+        </div> -->
+        <!-- <div class="menus" routerLink="dashboard"> -->
+        <!-- <span>Dashboard</span>
+        </div>
+        <div class="menus" routerLink="aboutUs">
+            <span>About Us</span>
+        </div> -->
+        <!-- <div routerLink="Home" class="menus">
+            <span>Home</span>
+        </div>
+        <div class="menus" routerLink="dashboard">
+            <span>Dashboard</span>
+        </div>
+        <div class="menus" routerLink="aboutUs">
+            <span>About Us</span>
+        </div> -->
+        <div class="menus" (click)="onClickMenus(nav)" *ngFor="let nav of navigations">
             <span>{{nav.name}}</span>
         </div>
+        <!-- <div routerLink="Home" (click)="onClickMenus({name:'Home',id:1})" class="menus">
+            <span>Home</span>
+        </div>
+        <div class="menus" (click)="onClickMenus({name:'Dashboard',id:1})">
+            <span>Dashboard</span>
+        </div>
+        <div class="menus" (click)="onClickMenus({name:'About Us',id:1})">
+            <span>About Us</span>
+        </div> -->
+
     </div>
 </div>
- -->

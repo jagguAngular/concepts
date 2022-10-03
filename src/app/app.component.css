@@ -6,3 +6,8 @@ margin-right: 10px;
 .website{
     color:red;
 } */
+
+.MainBody {
+    border: 1px solid;
+    height: 75vh;
+}
