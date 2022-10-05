@@ -16,7 +16,13 @@ const routes: Routes = [
   {
     path: 'AboutUs',
     component: AboutUsComponent
+  },
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'Dashboard'
   }
+  
 ];
 
 

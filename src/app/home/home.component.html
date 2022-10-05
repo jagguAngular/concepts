@@ -1,1 +1,28 @@
-<p>home works!</p>
+<H1>Reactive Forms </H1>
+<div class="forForm">
+    <form [formGroup]="validationForm">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input (input)="writingEmail()" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" formControlName="email">
+            <div id="emailHelp" class="form-text text-muted" *ngIf="validationForm.get('email').invalid && (validationForm.get('email').touched || validationForm.get('email').dirty)">
+                <div style="color: red;" *ngIf="validationForm.get('email').errors.required">Email Is Required.</div>
+                <div style="color: red;" *ngIf="validationForm.get('email').errors.email">Invalid Email</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" formControlName="password">
+            <div id="emailHelp" class="form-text text-muted" *ngIf="validationForm.get('password').invalid && (validationForm.get('password').touched || validationForm.get('password').dirty)">
+                <div style="color: red;" *ngIf="validationForm.get('password').errors.required">password Is Required.</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <select (change)="onselecetDrop()" name="" class="form-control" id="" formControlName="place">
+                <option value="{{data.id}}" *ngFor="let data of dropdownArray">{{data.name}}</option> 
+            </select>
+        </div>
+
+        <button type="submit" (click)="submitForm()" class="btn btn-primary" [disabled]="validationForm.invalid">Submit</button>
+    </form>
+</div>
